@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web, web development, web course, js, javascript, jQuery, bootstrap, angular">
+    <meta name="description" content="Sve što Vas zanima o JavaScript-u, šta je jQuery, javascript okviri, bootstrap.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style/javascript.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WEB Course: JavaScript</title>
+</head>
+
+<body style="background-color: #f5faff;">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+            <img src="style/img/web_logo.png" alt="" style="width: 40px; height: 40px; margin-right: 10px;">
+            <a class="navbar-brand" href="index.html">WEB Course</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Lessons
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="internet.html">Internet i WWW</a>
+                            <a class="dropdown-item" href="html&css.html">HTML5 i CSS3</a>
+                            <a class="dropdown-item" href="javascript.html">Java Script</a>
+                            <a class="dropdown-item" href="xml.html">XML</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Advanced
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="WEBdizajn.html">Web dizajn</a>
+                            <a class="dropdown-item" href="SEO.html">SEO optimizacija</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rate.html">Rate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <p id="title">Šta je JS?</p>
+            <p class="lead">JavaScript</p>
+        </div>
+    </div>
+
+    <div class="container" style="text-align: justify; margin-bottom: 40px;">
+        <p id="heading1">Šta je to JavaScript?</p>
+        <p style="font-size: 15pt;">
+            <b>JavaScript</b> je skript jezik na strani klijenta (client-side scripting
+            language) koji omogućava autorima Web stranica da razvijaju
+            interaktivne Web stranice i sajtove. <b>Skriptovanje na strani klijenta</b> (client-side scripting) se
+            odnosi
+            na programski jezik koji se izvršava u okviru web pretraživača
+            (na klijent sloju) umesto na Web serveru (na aplikativnom
+            obrade). Deo pretraživača koji izvršava kod skript jezika naziva se skript
+            mašina (scripting engine) pretraživača. Skript mašina je samo jedna vrsta <b>prevodioca</b>, gde se pojam
+            prevodilac generalno odnosi na bilo koji program koji izvršava
+            kod skript jezika. Kada mašina za skritovanje učita Web
+            stranicu, ona prevodi bilo koji program pisan u skript jezicima,
+            kao što je JavaScript. Web pretraživač koji sadrži skript mašinu zove se <b>skript
+                domaćin</b> (scripting host).
+        </p>
+        <ul style="font-size: 15pt;">JavaScript omogućava Web programerima da obavljaju
+            zadatke kao što su:
+            <li>
+                Čitanje tagova (elemenata) iz dokumenata i pisanje novih elemenata i
+                teksta u dokumentima
+            </li>
+            <li>
+                Manipulisanje ili premeštanje teksta
+            </li>
+            <li>
+                Obavlljnje matematičkih proračuna nad podacima
+            </li>
+            <li>
+                Reagovanje na događaje, kao što je npr. korisnikov klik na dugme
+            </li>
+            <li>
+                Primanje tekućih podataka i vremena od korisnikovog računara ili kada
+                je poslednji put dokument bio modifikovan
+            </li>
+            <li>
+                Određivanje veličine ekrana korisnika, verzije pretraživača, ili
+                rezolucije ekrana
+            </li>
+            <li>
+                Preduzimanje radnje u skladu sa uslovima (npr. validacija), kao što su
+                upozoravanje korisnika ako unese pogrešnu informaciju u formu
+            </li>
+        </ul>
+        <p style="font-size: 15pt;">
+            <b>JavaScript alati: </b> Adobe Dreamweaver, MS Expression Web, NetBeans, Xcode, MS Visual Studio, Aptana,
+            vi and emacs, Komodo, Notepad++ itd. <br>
+            JavaScript može biti ugrađen u stranicu ili stavljen u eksternu
+            skript datoteku (slično kao kod CSS-a). Skriptovi se dodaju na web stranicu unutar &lt;script&gt;
+            elementa. Tip atributa na početku taga
+            &lt;script&gt; ukazuje koji skript
+            programski jezik se nalazi unutar elementa, tako da za
+            JavaScript koristite vrednost text / javascript.
+        </p>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/dodavanje_script.png" alt="Dodavanje script-a">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 1: Dodavanje script-a
+            </figcaption>
+        </figure>
+        <ul style="font-size: 15pt;">Postoje tri mesta (načina) gde možete staviti vaše Java
+            skriptove, a jedan XHTML (HTML) dokument može da koristi
+            sva tri, jer ne postoji ograničenje na broj skripti koje jedan
+            dokument može da sadrži:
+            <li>
+                U okviru <b>&lt;head&gt;</b> tag-a: Ovi skriptovi ćе biti pozvani kada ih
+                aktivira događaj.
+            </li>
+            <li>
+                U <b>&lt;body&gt;</b> tag-u: Ove skriptovi ćе raditi kada se stranica
+                učita.
+            </li>
+            <li>
+                U <b>eksternoj</b> datoteci.
+            </li>
+        </ul>
+        <p style="font-size: 15pt;">
+            Takođe možete da smestite JavaScript kod u eksternom
+            dokumentu koji ima ekstenziju <b>.js</b>. Kada postavite JavaScript u eksternu datoteku, potrebno je da
+            koristite atribut <b>src</b> u <b>&lt;script&gt;</b> elementu. <br> Primer:
+            &lt;script type=&quot;JavaScript&quot; src=&quot;scripts/validation.js&quot;&gt;&lt;/script&gt;
+            <br>
+            <b>Document Object Model (DOM)</b> je interfejs koji omogućava pristup i manipulaciju HTML dokumentima
+            pomoću JavaScript-a. Predstavlja web stranicu kao strukturu objekata — svaki element (tekst, slika, forma,
+            link...) postaje objekat sa svojim svojstvima, metodama i događajima.
+        </p>
+        <ul style="font-size: 15pt;">
+            Kroz DOM možemo:
+            <li>
+                Čitati i menjati sadržaj i stilove (npr. promena boje pozadine),
+            </li>
+            <li>
+                Pozivati metode koje vrše akcije na stranici (npr. ispisivanje teksta),
+            </li>
+            <li>
+                Reagovati na događaje (npr. klik na dugme).
+            </li>
+        </ul>
+        <p style="font-size: 15pt;">
+            DOM je standard koji podržavaju svi moderni pregledači i ključan je za dinamičku manipulaciju web
+            stranicama.
+        </p>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/DOM.png" alt="Document Object Model (DOM)">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 2: Document Object Model (DOM)
+            </figcaption>
+        </figure>
+        <p style="font-size: 15pt;">
+            <b>Svojstva Document</b> objekta: alinkColor, bgcolor, fgcolor, lastModified, linkColor, referrer, title,
+            vlinkColor. <br>
+            <b>Metodi Document</b> objekta: write(string), writeln(string).
+            <br><b>Svojstva i metodi FORM</b> objekata: action, length, method, name, target; reset() i submit().
+            <br><b>Svojstva FORM</b> elemenata: checked, disabled, form, length, name, selectedIndex, type, value. <br>
+            <b>Metodi Form</b> elemenata: blur(), click(), focus(), select().
+            <br>
+            <b>Osnove JavaScript-a</b><br>
+            <b>Promenljiva(variable)</b>se koristi za skladištenje nekih
+            informacija. Predstvalja delić memorije računara gde možete
+            da memorišete brojeve, stringove (koji su niz znakova), ili
+            reference na objekte. U promenljive spadaju: Integer (celi brojevi), Floating point number (brojevi sa
+            pokretnim zarezom), Boolean (tačno/netačno), Text (odnosi se na string podatke), Nizovi i objekti.<br>
+            <b>Operatori (operators)</b> izvršavaju funkcije nad promenljivim. Postoje različite vrste operatora:
+            Aritmetički operatori, Operatoori dodeljivanja, Operatori poređenja, Logički operatori, String operatori.
+            <br>
+            <b>Funkcije (functions)</b> su delovi
+            skripta koji su grupisani zajedno
+            u cilju realizacije određenog zadatka. <br> <b>Uslovne naredbe (conditional statements)</b> omogućavaju da
+            izvršite različite akcije koje se baziraju na uslovu. Vrste uslovnih naredbi: if naredbe (koriste se kada
+            želite da se skript izvrši ako je uslov tačan), if...else (koriste se kada želite da izvršite jedan set koda
+            ukoliko je uslov tačan, a drugi ako je netačan), switch (koriste se kada želite da izaberete jedan blok koda
+            od mnogih u zavisnosti od situacije). <br><b>Petlje (loops)</b> se mogu podesiti tako
+            da se blok
+            koda izvršava
+            određeni broj puta, ili dok je uslov zadovoljen.
+            <br><b>Validacija forme</b> - Postoji nekoliko načina za validaciju formulara. Kada korisnik klikne na dugme
+            za slanje, aktivira se onsubmit događaj na
+            &lt;form&gt; elementu, koji poziva funkciju za validaciju - smeštenu u skripti ili zaglavlju dokumenta. Ta
+            funkcija treba da vrati true kako bi se podaci poslali. Ako postoji greška, vraća false i forma se ne šalje,
+            već prikazuje korisniku gde je problem u unetim podacima.
+        </p>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/validacija_forme.png" alt="Primer validacija forme">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 3: Primer validacija forme
+            </figcaption>
+        </figure>
+        <p id="heading1">Šta je to jQuery?</p>
+        <p style="font-size: 15pt;">
+            <b>jQuery</b> je jedna od najpopularnijih JavaScript biblioteka u upotrebi danas
+            koju koristi 65% od najposećenijih 10 miliona sajtova na vebu. jQuery uključuje sledeće funkcije:
+            Događaje, efekte i animacije, Ajax, JSON parsiranje, mašinu za selektovanje, DOM manipulacija zasnovana na
+            CSS-u, objekte za asinhronu obradu itd. Karakteristike jQuery biblioteke: moćna biblioteka, mala veličina
+            datoteka, odlična podrška za animacije, lakši rad sa AJAX-om, podrška za različite web brauzere, lakši rad
+            sa CSS-om, proširivost, besplatna i otvorenog koda. <br>
+            <b>Pozivanje jQuery biblioteke</b><br>
+            JQuery biblioteka se može preuzeti i postaviti na sopstveni
+            web sajt ili referencirati sa nekog servera za opsluživanje
+            sadržaja (CDN - Content Delivery Network) <br>
+            &lt;script src=&quot;http://code.jquery.com/jquery-latest.js&quot;&gt;&lt;/script&gt; <br>
+            &lt;script type=&quot;text/javascript&quot; src=&quot;jquery-1.10.2.min.js&quot;&gt;&lt;/script&gt; <br>
+            <b>jQuery UI Toolkit</b> - Ovaj okvir sadrži neke interesantne funkcionalnosti koje
+            uključuju nove vizuelne elemente (widgets), skup ikonica, kao
+            i mehanizam za lako generisanje atraktivnih CSS stilova.
+        </p>
+        <ul style="font-size: 15pt;">Preuzimanje i konfigurisanje biblioteke:
+            <li>Odabrati (ili kreirati) temu</li>
+            <li>Preuzeti temu</li>
+            <li>Odabrati elemente</li>
+            <li>Preuzeti datoteku (zip)</li>
+            <li>Instalirati sadržaj zip datoteke u radni direktorijum</li>
+            <li>Ako instalirate više tema, kopirajte samo podatke za dodatne teme</li>
+            <li>Povežite se sa CSS datotekama</li>
+            <li>Povežite se sa JS datotekama</li>
+        </ul>
+        <p style="font-size: 15pt;">
+            <b>jQuery projekti</b><br>
+            <b>jQuery UI</b> predstavlja pripremljeni skup interakcija korisničkog interfejsa,
+            efekata, vidžeta i tema koji su kreirani nad jQuery bibliotekom. <br>
+            <b>jQuery Mobile</b> je HTML5-zasnovani korisnički interfejs dizajniran za
+            izgradnju prilagodljivih web sajtova i aplikacija za mobilne telefone, tablete i
+            desktop uređaje. <br>
+            <b>QUnit</b> je moćan i lak za korišćenje JavaScript okvir za testiranje jedinica
+            (unit-a). Može se koristiti za testiranje bilo kakvog JS koda. <br>
+            <b>Sizzle</b> je JavaScript CSS selektor mašina. Podržava CSS 3 selektore, kao i
+            mnoge dodatne selektore. Podržava i Unicode.
+        </p>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/jquery_projekti.png" alt="jQuery projekti">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 4: jQuery projekti
+            </figcaption>
+        </figure>
+        <p id="heading1">JavaScript okviri</p>
+        <p style="font-size: 15pt;">
+            <b>JavaScript okvir</b> predstavlja okvir za web aplikacije pisane u
+            JavaScript-u. JS okvir opisuje strukturu aplikacije i pruža programerima
+            način da organizuju kod i učine aplikaciju fleksibilnijom i
+            skalabilnijom. Najpoznatiji JS okviri su: Angular, React, Ember, Meteor, Backbone, Knockout, Vue, D3,
+            Aurelia itd. <br>
+            <b>Angular</b> je okvir za razvoj web aplikacija otvorenog koda i zasnovan
+            je na TypeScript jeziku. Njime upravlja Google tim, kao i velika zajednica programera i
+            kompanija. Podržava kreiranje progresivnih web aplikacija, izbornih mobilnih
+            aplikacija, kao i aplikacija za desktop operativne sisteme. Nudi dobru brzinu i performanse kroz templejt
+            rendering i
+            razdvajanje koda (učitava se samo kod potreban za renderovanje
+            učitanog pogleda). Poseduje i podršku za atomatizaciju testiranja, kao i za
+            pristupačnost (accessability). Angular implementira MVC arhitekturu radi
+            razdvajanja komponenti za prezentaciju, podatke i
+            logičkih komponenti.
+        </p>
+        <p id="heading1">Bootstrap</p>
+        <p style="font-size: 15pt;">
+            <b>Bootstrap</b> predstavlja besplatan skup alata za
+            kreiranje web sajtova i web aplikacija. Baziran je na HTML i CSS šablonima za tipografiju, kreiranje
+            formulara, dugmadi, navigacionih i ostalih komponenti, kao i
+            razne šablone i proširenja za JavaScript. Cilj Bootstrap framework-a je olakšavanje programiranja za web.
+            Takodje, Bootstrap je framework za web aplikacije, tj. softverski
+            framework koji je dizajniran tako da podrži razvoj dinamičkih
+            web sajtova i web aplikacija. Bootstrap je kompatibilan sa najnovijim verzijama web
+            pregledača. <br>
+            <b>Bootstrap mrežni sistem</b> koristi niz kontejnera, vrsta i kolona za
+            aranžiranje i poravnanja sadržaja na stranici. Izgrađen je
+            pomoću Flexbox-a i potpuno je prilagodljiv za različite
+            uređaje.
+        </p>
+        <ul style="font-size: 15pt;">Bootstrap podržava <b>tri vrste kontejnera</b>:
+            <li>
+                .container - setuje max-width na svakoj prelomnoj tački
+            </li>
+            <li>
+                .container-fluid - to je 100% širine na svim prelomnim tačkama
+            </li>
+            <li>
+                .container-{breakpoint} - to je širina 100% sve do određene prelomne
+                tačke
+            </li>
+        </ul>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/bootstrap_primer.png" alt="Primer Bootstrap-a">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 5: Primer Bootstrap-a
+            </figcaption>
+        </figure>
+        <h1 style="text-align: center;">Proveri svoje znanje - Reši kviz</h1>
+
+        <div style="text-align: center;">
+            <button id="open-quiz" type="button" class="btn btn-primary">ZAPOČNI KVIZ</button>
+        </div>
+
+        <div id="quizModal" class="modal">
+            <div class="modal-content">
+                <span id="closeQuiz" class="close">&times;</span>
+                <div class="app">
+                    <h1>JavaScript Quiz</h1>
+                    <div class="quiz">
+                        <h2 id="question">Question goes here</h2>
+                        <div id="answer-buttons">
+                            <button class="btn">Answer 1</button>
+                            <button class="btn">Answer 2</button>
+                            <button class="btn">Answer 3</button>
+                            <button class="btn">Answer 4</button>
+                        </div>
+                        <button id="next-btn">Sledeće</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about" style="text-align: center;">
+                    <h3>Diplomski radio:</h3>
+                    <ul>
+                        <li>Željko Žarković 55/2021</li>
+                    </ul>
+
+                </div>
+                <div class="footer-section contact" style="text-align: center;">
+                    <h3>Kontakt:</h3>
+                    <span><i class="fas fa-envelope"></i> 55-2021@ftn.edu.rs</span><br>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 WEB TEHNOLOGIJE
+        </div>
+    </footer>
+
+    <script src="javascriptQuiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

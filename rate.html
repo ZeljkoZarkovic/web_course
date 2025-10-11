@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web, web development, web course">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style/rate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WEB Course: Rate</title>
+</head>
+
+<body style="background-color: #f5faff;">
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+            <img src="style/img/web_logo.png" alt="" style="width: 40px; height: 40px; margin-right: 10px;">
+            <a class="navbar-brand" href="index.html">WEB Course</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Lessons
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="internet.html">Internet i WWW</a>
+                            <a class="dropdown-item" href="html&css.html">HTML5 i CSS3</a>
+                            <a class="dropdown-item" href="javascript.html">Java Script</a>
+                            <a class="dropdown-item" href="xml.html">XML</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Advanced
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="WEBdizajn.html">Web dizajn</a>
+                            <a class="dropdown-item" href="SEO.html">SEO optimizacija</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rate.html">Rate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <p id="title">Zanima nas Vaše mišljenje?</p>
+            <p class="lead">Podelite svoje utiske o WEB kursu.</p>
+        </div>
+    </div>
+
+    <div id="container">
+        <h1>Ocenite kurs</h1>
+        <input type="text" id="imePrezime" placeholder="Ime i prezime" required>
+        <input type="text" id="smer" placeholder="Smer" required>
+        <input type="text" id="brojIndeksa" placeholder="Broj indeksa" required>
+
+        <p style="text-align:center;">Vaša ocena (1-5):</p>
+        <div class="stars" id="starContainer">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+
+        <textarea id="komentar" rows="4" placeholder="Vaš komentar..."></textarea>
+
+        <div style="text-align: center;">
+            <button id="posaljiBtn" type="button" class="btn btn-primary">POŠALJI OCENU</button>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Uspešno poslato!</h2>
+            <p>Vaša ocena je zabeležena. Hvala Vam!</p>
+            <button onclick="closePopup()">U redu</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about" style="text-align: center;">
+                    <h3>Diplomski radio:</h3>
+                    <ul>
+                        <li>Željko Žarković 55/2021</li>
+                    </ul>
+
+                </div>
+                <div class="footer-section contact" style="text-align: center;">
+                    <h3>Kontakt:</h3>
+                    <span><i class="fas fa-envelope"></i> 55-2021@ftn.edu.rs</span><br>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 WEB TEHNOLOGIJE
+        </div>
+    </footer>
+
+    <script src="rate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

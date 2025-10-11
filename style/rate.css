@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+}
+
+#navbar {
+    background-color: #f5faff;
+    font-size: 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.jumbotron {
+    background: linear-gradient(to right, #051e32, #003659, #045293);
+    color: white;
+}
+
+#title {
+    font-size: 40pt;
+    margin-bottom: 0;
+}
+
+.jumbotron .container .lead {
+    font-size: 20pt;
+}
+
+#container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#container input {
+    margin-bottom: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.star {
+    font-size: 28px;
+    cursor: pointer;
+    color: #ccc;
+    transition: 0.2s;
+}
+
+.star.selected {
+    color: #2994e0;
+}
+
+#posaljiBtn {
+    background-color: #2994e0;
+    width: 150px;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+#posaljiBtn:hover {
+    background-color: white;
+    color: #2994e0;
+    transform: scale(0.9);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    max-width: 350px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-content h2 {
+    color: #001e4d;
+    margin-top: 0;
+}
+
+.popup-content p {
+    font-size: 15px;
+    margin: 10px 0 20px;
+}
+
+.popup-content button {
+    background-color: #001e4d;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.popup-content button:hover {
+    background-color: #045293;
+    transform: scale(0.9);
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #003659;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 20px;
+}
+
+.about,
+.links,
+.contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #051e32;
+    color: #fff;
+    padding-bottom: 17px;
+}
+
+.footer-section ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}

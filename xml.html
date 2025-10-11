@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web, web course, web development, xml, extensible markup language, web servisi">
+    <meta name="description" content="Sve što Vas zanima o XML, šta je i kako radi, sve o web servisima.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style/xml.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WEB Course: XML</title>
+</head>
+
+<body style="background-color: #f5faff;">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+            <img src="style/img/web_logo.png" alt="" style="width: 40px; height: 40px; margin-right: 10px;">
+            <a class="navbar-brand" href="index.html">WEB Course</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Lessons
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="internet.html">Internet i WWW</a>
+                            <a class="dropdown-item" href="html&css.html">HTML5 i CSS3</a>
+                            <a class="dropdown-item" href="javascript.html">Java Script</a>
+                            <a class="dropdown-item" href="xml.html">XML</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Advanced
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="WEBdizajn.html">Web dizajn</a>
+                            <a class="dropdown-item" href="SEO.html">SEO optimizacija</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rate.html">Rate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <p id="title">Šta je XML?</p>
+            <p class="lead">Extensible Markup Language</p>
+        </div>
+    </div>
+
+    <div class="container" style="text-align: justify; margin-bottom: 40px;">
+        <p id="heading1">Šta je to XML?</p>
+        <p style="font-size: 15pt;">
+            <b>XML</b> (Extensible Markup Language) je standardni, otvoreni i nezavisni format za opis i razmenu
+            podataka na
+            Web-u. On ne samo da čuva informacije, već i njihovu strukturu i značenje - zato se često opisuje kao
+            “informacija o informaciji”. XML koristi tagove (oznake) da jasno definiše sadržaj, što omogućava i ljudima
+            i računarima da lako čitaju i obrađuju podatke. Dokument je tekstualan, samoopisujući i odvojen od načina
+            prikaza (npr. putem StyleSheet-a). Prednost XML-a je proširivost - korisnici mogu kreirati sopstvene oznake
+            i prilagoditi jezik različitim potrebama. Koristi se za razmenu podataka između različitih sistema i baza,
+            posebno u distribuiranim okruženjima.
+        </p>
+        <ul style="font-size: 15pt;"> Tehnologije za:
+            Specifikaciju logičke strukture XML dokumenata
+            <li>
+                DTD / XSD - definišu strukturu XML dokumenata
+            </li>
+            <li>
+                XSLT - transformacija XML sadržaja
+            </li>
+            <li>
+                XPath / XQuery - pretraga i upiti nad XML podacima
+            </li>
+            <li>
+                SOAP / WSDL - komunikacija i opis Web servisa
+            </li>
+        </ul>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/generisanje_XML.png" alt="Generisanje različitih formata iz XML izvora">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 1: Generisanje različitih formata iz XML izvora
+            </figcaption>
+        </figure>
+        <p style="font-size: 15pt;">
+            XML je fleksibilan, razumljiv i pouzdan način za razmenu podataka između različitih aplikacija i platformi.
+        </p>
+        <ul style="font-size: 15pt;"><b>XML parseri:</b>
+            <li>
+                DOM - Document Object Model
+            </li>
+            <li>
+                SAX- Simple API for XML Prikaz teksta
+            </li>
+            <li>
+                css - Cascading Style Sheets
+            </li>
+            <li>
+                XIink - XML Linking Language je jezik koji opisuje standardni način kreiranja hiperlinkova u
+                XML dokumentima
+
+            </li>
+            <li>
+                XFragments
+            </li>
+            <li>
+                Xpointer - XML Pointer Language je jezik koji opisuje standardni način na koji hiperlinkovi pokazuju na
+                određeno mesto unutar XML dokumenta
+            </li>
+            <li>
+                XForms - je sistem za pravljenje obrazaca zasnovan na XML-u
+            </li>
+        </ul>
+        <ul style="font-size: 15pt;"><b>Standarni zasnovani na XML-u</b>
+            <li>
+                SOAP - Simple Object Access Protocol - jednostavan protokol baziran na XML-u koji omogućuje aplikacijama
+                razmenu podataka u tekstualnom obliku preko HTTP protokola
+            </li>
+            <li>
+                WSDL -Web Service Definition Language - je jezik baziran na XML-u koji omogućuje opis web servisa
+            </li>
+            <li>
+                UDDI - Universal Description, Discovery and Integration Protocol
+            </li>
+        </ul>
+        <p style="font-size: 15pt;">
+            <b>Istorija XML-a</b> <br>
+            Generalized Markup Language (GML)
+            IBM je 60-ih razvio GML da bi olakšao upravljanje velikom količinom dokumentacije. Označavanjem sadržaja
+            posebnim tagovima omogućeno je višestruko korišćenje istih podataka u različite svrhe.
+            <br>Standard Generalized Markup Language (SGML)
+            Iz GML-a je 80-ih nastao SGML, međunarodni standard (ISO 8879:1986) za strukturisanje dokumenata. Iako vrlo
+            moćan, bio je složen i skup, pa se koristio uglavnom u velikim kompanijama i državnim institucijama.
+
+            <br>HyperText Markup Language (HTML)
+            , izveden iz SGML-a, namenjen je prikazu sadržaja na Web-u pomoću fiksnog skupa oznaka. Njegov
+            nedostatak je što ne razdvaja sadržaj od forme, što kasnije rešava XML.
+
+            <br>Extensible Markup Language (XML)
+            XML je razvijen 90-ih od strane W3C kao jednostavniji i proširiv jezik koji kombinuje prednosti HTML-a i
+            SGML-a. Ne zamenjuje HTML već ga dopunjuje i koristi se za razmenu, čuvanje i opis podataka. Standardizovan
+            je 1998. kao XML 1.0.
+            <br>
+            <b>XML atributi</b> - Kao i u HTML-u, XML elementi mogu imati atribute u otvarajućem tagu koji daju dodatne
+            informacije o elementu. Vrednosti atributa uvek moraju biti unutar navodnika, jednostrukih ili dvostrukih:
+            &lt;airline name=&quot;WizzAir&quot;&gt; ili &lt;airline name=&#39;WizzAir&#39;&gt; Podaci se mogu čuvati i
+            kao element: &lt;airline&gt;WizzAir&lt;/airline&gt; ili kao atribut: &lt;user
+            airline=&quot;WizzAir&quot;&gt; <br>
+            <b>XML parser </b> je program koji čita i obrađuje XML dokumente. Ugrađen je u većinu pregledača (npr.
+            Internet Explorer, Edge). Njegov zadatak je da rasčlani XML fajl i napravi hijerarhijsku strukturu podataka
+            (XML stablo).
+        </p>
+        <ol style="font-size: 15pt;"> Parser:
+            <li>
+                Čita zaglavlje dokumenta (npr. &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;)
+            </li>
+            <li>
+                Prepoznaje početni (glavni) tag
+            </li>
+            <li>
+                Obradjuje elemente i njihove atribute
+            </li>
+            <li>
+                Formira odnose između elemenata (roditelj-dete)
+            </li>
+            <li>
+                Ponavlja proces dok se ceo dokument ne obradi
+            </li>
+        </ol>
+        <p style="font-size: 15pt;">
+            Parseri omogućavaju ispravno čitanje i razumevanje XML strukture od strane aplikacija i sistema.
+            <br>
+            <b>XML rečnici</b> - XML je brzo postao osnova za razvoj brojnih specijalizovanih jezika koji se koriste u
+            različitim oblastima. Neki od poznatih <b>XML rečnika</b> su:
+        </p>
+        <ul style="font-size: 15pt;">
+            <li>
+                SVG - opis vektorske grafike
+            </li>
+            <li>
+                MathML - opis matematičkih izraza
+            </li>
+            <li>
+                RDF - model za predstavljanje i obradu podataka na Web-u
+            </li>
+            <li>
+                XHTML - HTML u XML formatu
+            </li>
+            <li>
+                SMIL - opis multimedijalnih dokumenata
+            </li>
+            <li>
+                WML - XML jezik za prikaz podataka na mobilnim uređajima (WAP protokol)
+            </li>
+        </ul>
+        <p style="font-size: 15pt;">
+            <b>AJAX i XML</b> Asynchronous JavaScript i XML omogućava razmenu podataka između pregledača i servera bez
+            ponovnog učitavanja stranice. Zasniva se na JavaScript-u, XML-u, HTML-u. Pomoću XMLHttpRequest objekta, AJAX
+            omogućava brže i interaktivnije web aplikacije. U suštini, JavaScript reaguje na događaje na stranici, menja
+            sadržaj pomoću DOM-a, i asinhrono komunicira sa serverom. Time aplikacije postaju dinamičnije i efikasnije.
+            <br>
+            <b>XML baze podataka</b> - XML dokumenti se mogu čuvati kao obične datoteke ili u bazama podataka. XML baze
+            omogućavaju jednostavno skladištenje, pretragu i razmenu podataka između različitih sistema.
+        </p>
+        <ul style="font-size: 15pt;"> Zbog hijerarhijske strukture XML-a, razvijeni su posebni sistemi za njegovo
+            efikasno skladištenje:
+            <li>
+                Flat files - XML se čuva direktno u datotekama; pogodno za male količine podataka.
+            </li>
+            <li>
+                Relacione baze (XML enabled) - klasične baze (npr. Oracle, SQL Server) sa podrškom za XML. Omogućavaju
+                upite pomoću XPath i DOM API-ja.
+            </li>
+            <li>
+                Native XML baze - baze posebno kreirane za XML. Čuvaju dokumente u izvornom obliku, podržavaju XQuery i
+                omogućavaju indeksiranje i brzu pretragu.
+            </li>
+        </ul>
+        <p id="heading1">WEB servisi</p>
+        <p style="font-size: 15pt;">
+            <b>Web servisi</b> uključuju tri glavne uloge: PROVAJDER SERVISA, REGISTAR SERVISA i KORISNIK SERVISA. Tri
+            glavne operacije vezane za web servise su: publikovanje, pronalaženje i povezivanje (Bininding).
+        </p>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/servisno_orjentisana_ar.png" alt="Servisno orjentisana arhitektura">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 2: Servisno orjentisana arhitektura
+            </figcaption>
+        </figure>
+        <p style="font-size: 15pt;">
+            <b>SOAP zahtev</b> - U sledećem primeru, šalje se SOAP zahtev za metodu web servisa
+            pod nazivom calculateCarPayment i koji prosleđuje tri
+            različita argumenta.
+        </p>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/soap_primer.png" alt="SOAP primer">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 3: SOAP primer
+            </figcaption>
+        </figure>
+        <p style="font-size: 15pt;">
+            <b>REST</b> je šablon za dizajn web servisa (design
+            pattern). Predstavlja alternativni način kreiranja web
+            servisa.
+        </p>
+        <ul style="font-size: 15pt;">
+            Konkretna implementacija REST web servisa
+            sledi četiri glavna dizajn principa:
+            <li>
+                Eksplicitno korišćenje HTTP metoda
+            </li>
+            <li>
+                Nezavisnost od konekcije (stateless)
+            </li>
+            <li>
+                Izlaganje resursa puter URI-a
+            </li>
+            <li>
+                Koristiti XML i/ili JavaScript Object Notation
+                (JSON), za prenos podataka.
+            </li>
+        </ul>
+        <ul style="font-size: 15pt;">
+            <b>Bezbednost web servisa</b> obuhvata niz mehanizama koji omogućavaju zaštitu podataka i kontrolu pristupa
+            u
+            komunikaciji između klijenta i servera. Ključni aspekti bezbednosti su:
+            <li>
+                <b>Autentifikacija</b> - identitet - Ko je korisnik?<br>
+                <div style="padding-left: 235px;">- Kako dokazujemo da je neko stvarno to što tvrdi?</div>
+            </li>
+            <li>
+                <b>Autorizacija</b> - kontrola pristupa - Šta korisnik može da uradi?
+            </li>
+            <li>
+                <b>Poverljivost</b> - enkripcija - Kako da sprečimo uvid u podatke od neovlašćenih lica?
+            </li>
+            <li>
+                <b>Integritet</b> - onemogućavanje izmena - Kako da sprečimo izmenu poruka na putu od pošiljaoca do
+                primaoca?
+            </li>
+        </ul>
+        <ul style="font-size: 15pt;">
+            <b>Tehnologije i mehanizmi</b> za bezbednost Web servisa:
+            <li>
+                <b>Autentifikacija</b> - identitet - HTTP autentifikacija (basic, digest)<br>
+                <div style="padding-left: 235px;">- SSL digitalni sertifikati</div>
+            </li>
+            <li>
+                <b>Autorizacija</b> - kontrola pristupa - Single Sign-On (SSO) <br>
+                <div style="padding-left: 290px;">- SAML (Security Assertion Markup Language)</div>
+            </li>
+            <li>
+                <b>Poverljivost</b> - enkripcija - SSL enkripcija <br>
+                <div style="padding-left: 220px;">- XML Encryption</div>
+            </li>
+            <li>
+                <b>Integritet</b> - onemogućavanje izmena - XML Digital Signatures
+            </li>
+        </ul>
+
+        <h1 style="text-align: center;">Proveri svoje znanje - Reši kviz</h1>
+
+        <div style="text-align: center;">
+            <button id="open-quiz" type="button" class="btn btn-primary">ZAPOČNI KVIZ</button>
+        </div>
+
+        <div id="quizModal" class="modal">
+            <div class="modal-content">
+                <span id="closeQuiz" class="close">&times;</span>
+                <div class="app">
+                    <h1>XML Quiz</h1>
+                    <div class="quiz">
+                        <h2 id="question">Question goes here</h2>
+                        <div id="answer-buttons">
+                            <button class="btn">Answer 1</button>
+                            <button class="btn">Answer 2</button>
+                            <button class="btn">Answer 3</button>
+                            <button class="btn">Answer 4</button>
+                        </div>
+                        <button id="next-btn">Sledeće</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about" style="text-align: center;">
+                    <h3>Diplomski radio:</h3>
+                    <ul>
+                        <li>Željko Žarković 55/2021</li>
+                    </ul>
+
+                </div>
+                <div class="footer-section contact" style="text-align: center;">
+                    <h3>Kontakt:</h3>
+                    <span><i class="fas fa-envelope"></i> 55-2021@ftn.edu.rs</span><br>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 WEB TEHNOLOGIJE
+        </div>
+    </footer>
+
+    <script src="xmlQuiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

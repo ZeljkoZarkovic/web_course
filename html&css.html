@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web, web development, web course, html5, css3, xhtml, api, hyper text markup language, cascading style sheets">
+    <meta name="description" content="Sve što Vas zanima o HTML5 i CSS3, šta je XHTML, HTML5 Api.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style/html&css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WEB Course: HTML5 i CSS3</title>
+</head>
+
+<body style="background-color: #f5faff;">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+            <img src="style/img/web_logo.png" alt="" style="width: 40px; height: 40px; margin-right: 10px;">
+            <a class="navbar-brand" href="index.html">WEB Course</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Lessons
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="internet.html">Internet i WWW</a>
+                            <a class="dropdown-item" href="html&css.html">HTML5 i CSS3</a>
+                            <a class="dropdown-item" href="javascript.html">Java Script</a>
+                            <a class="dropdown-item" href="xml.html">XML</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Advanced
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="WEBdizajn.html">Web dizajn</a>
+                            <a class="dropdown-item" href="SEO.html">SEO optimizacija</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rate.html">Rate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <p id="title">Šta je HTML5 i CSS3?</p>
+            <p class="lead">Hyper Text Markup Language i Cascading Style Sheets</p>
+        </div>
+    </div>
+
+    <div class="container" style="text-align: justify; margin-bottom: 40px;">
+        <p id="heading1">Šta je to XHTML?</p>
+        <p style="font-size: 15pt;">
+            <b>XHTML</b> je verzija HTML-a modifikovana da odgovori
+            XML standardu. Dizajniran da odvoji sadržaj od prezentacije: Sadržaj u XHTML-u i Prezentacija pod kontrolom
+            Cascading Style Sheets (CSS). On je proširiv, mogu da se definišu dodatni elementi. XHTML razlikuje velika i
+            mala slova. Svi elementi moraju da imaju početni tag i krajnji tag. Prazni elementi sadrže sopstveni krajnji
+            tag. Vrednosti atributa moraju da budu pod znacima navoda.
+        </p>
+        <ul style="font-size: 15pt;"> <b>Istorija HTML/XHTML</b>
+            <li>
+                1992 - HTML prvi put definisan
+            </li>
+            <li>
+                1994 - HTML 2.0
+            </li>
+            <li>
+                1995 - Netscape specifični ne standardni HTML
+            </li>
+            <li>
+                1996 - HTML 3.2, kompromisna verzija
+            </li>
+            <li>
+                1997 - HTML 4.0, odvaja sadržaj od prezentacije
+            </li>
+            <li>
+                1998 - XML standard za pisanje Web jezika
+            </li>
+            <li>
+                2000 - XHTML 1.0, HTML usklađen sa XML-om
+            </li>
+            <li>
+                2002 - XHTML 2.0
+            </li>
+        </ul>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/pravila_kreiranje.png" alt="Pravila za dobro kreiranje dokumenata">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 1: Pravila za dobro kreiranje dokumenata
+            </figcaption>
+        </figure>
+        <p style="font-size: 15pt;">
+            <b>Naredba DOCTYPE</b> Deklariše određenu verziju HTML-a koja se koristi na
+            stranici. Koristi je pretraživač za određivanje kako da se obradi
+            stranica. Uvek je prva naredba u HTML datoteci. Svaki XHTML dokument mora da počne sa
+            jednom !DOCTYPE dekleracijom.
+        </p>
+        <ul style="font-size: 15pt;"> Tri glavna tipa <b>DTD-a</b> su:
+            <li>
+                <b>Strict</b> - Koristi se za definisanje strukture stranice, bez
+                formatiranja (bez fontova, boja, veličine itd.). Takođe, koristi u kombinaciji sa CSS (Cascading Style
+                Sheets) ako želite da definišete kako dokument treba da izgleda.
+            </li>
+            <li>
+                <b>Transitional</b> - Korišćenje sa standardnim HTML i/ili CSS. Omogućava zastarele HTML elemente.
+            </li>
+            <li>
+                <b>Frameset</b> - Koristi se ako dokument koristi HTML okvire.
+            </li>
+        </ul>
+        <p style="font-size: 15pt;">
+            <b>Elementi</b> - sastoje se iz tri dela: početni tag koji može da sadrži atribute, sadržaj i završni tag.
+            Primer: &lt;p id=&quot;intro&quot;&gt;Dobrodošli&lt;/p&gt; <a
+                href="https://www.w3schools.com/tags/tag_p.asp">Za više informacija za &lt;p&gt; pogledati. </a>
+            <br><b>Atributi</b> - Uvek se koriste samo u početnom tag-u elementa.
+        </p>
+        <ul style="font-size: 15pt;">Tri tipa:
+            <li>
+                Opcioni atributi: Varira sa tipom elementa
+            </li>
+            <li>
+                Standardni atributi: id, class, title, style, dir, lang, xml:lang
+            </li>
+            <li>
+                Događaj atributi: onclick, ondblclick, onmousedown,
+                onmouseup, onmouseover, onmousemove, onmouseout,
+                onkeypress, onkeydown, onkeyup. Koriste se u skriptama.
+            </li>
+        </ul>
+        <p style="font-size: 15pt;">
+            <b>Prazni elementi</b> - Neki elementi nemaju sadržaj pa samim tim nemaju
+            ni završni tag: &lt;img src=&quot;photo.jpg&quot; /&gt; ;
+            &lt;br /&gt; ;
+            &lt;hr /&gt; ;
+            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;main.css&quot; /&gt; ; Kod XHTML-a,
+            koji zahteva završne tagove na svim
+            elementima, jedan tag predstavlja i početni i završni
+            tag. <br>
+            <b>&lt;h1&gt; , &lt;h2&gt;, &lt;h3&gt; itd
+            </b> - su naslovi (zaglavlja) na stranici. Predstavljaju glavnu temu, podnaslove i sl. na
+            stranici. Važno je da se koriste na logičan način, koji u
+            velikoj meri pomaže pomoćne tehnologije kao
+            što su pretraživači govora koji predstavljaju na
+            razumljiv način sadržaj stranice. <br>
+            <b>&lt;p&gt; tag</b> - Paragraf se definiše &lt;p&gt; tagom. Web pretraživači automatski dodaju praznu
+            liniju (red) iznad i ispod paragrafa. Navodi/citiranja (&lt;blockquote&gt;) koriste se za
+            navođenje dužih (preko 4 reda) citata. Web
+            pretraživači obično uvlače (na desno) taj deo
+            teksta. <br>
+        </p>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <ul style="font-size: 15pt;"><b>Liste</b>
+                    <li>
+                        Nesređene liste (liste nabrajanja - bullets) <br>
+                        &lt;ul&gt;
+                        &lt;li&gt;One&lt;/li&gt;
+                        &lt;li&gt;Two&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                    </li>
+                    <li>
+                        Uređene liste (numbered lists) <br>
+                        &lt;ol&gt;
+                        &lt;li&gt;One&lt;/li&gt;
+                        &lt;li&gt;Two&lt;/li&gt;
+                        &lt;/ol&gt;
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <ul style="font-size: 15pt;"><b>Označavanje teksta:</b>
+                    <li>
+                        Podebljanja <br>
+                        &lt;b&gt;text&lt;/b&gt; <br>
+                        &lt;strong&gt;text&lt;/strong&gt;
+
+                    </li>
+                    <li>
+                        Kurzivi<br>
+                        &lt;i&gt;text&lt;/i&gt; <br>
+                        &lt;em&gt;text&lt;/em&gt;
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <ul style="font-size: 15pt;"><br><br>
+                    <li>
+                        Drugi <br>
+                        &lt;sub&gt;text&lt;/sub&gt; subscript <br>
+                        &lt;sup&gt;text&lt;/sup&gt; superscript <br>
+                        &lt;del&gt;text&lt;/del&gt; deleted text
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p style="font-size: 15pt;">
+            <b>Grafika</b> Grafika se postavlja korišćenjem img elementa. Alt atribut daje alternativni tekst koji
+            opisuje
+            grafiku u slučaju da grafika ne može biti
+            prikazana ili korisnik ne može da vidi grafiku. &lt;img src=&quot;picture.gif&quot;
+            alt=&quot;Suzzallo&quot;&gt;
+        </p>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12" style="font-size: 15pt;">
+                <b>Anchors (hiperlinkovi)</b> mogu da povežu stranicu sa bilo
+                kojom datotekom na web-u. &lt;a href=&quot;http://www.washington.edu/&quot;&gt; University of Washington
+                &lt;/a&gt;
+
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12" style="font-size: 15pt;">
+                <b>Div</b> ograđuje skup elemenata. <br>
+                &lt;div style=&quot;text-align: center;&quot;&gt; <br>
+                &lt;h2&gt; News &lt;/h2&gt; <br>
+                &lt;p&gt;&lt;a href=&quot;budget.html&quot;&gt;Budget&lt;/a&gt;&lt;/p&gt; <br>
+                &lt;p&gt;&lt;a href=&quot;invest.html&quot;&gt;Investment&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12" style="font-size: 15pt;">
+                <b>Span</b> ograđuje objekte (tekst, grafike) u okviru
+                elementa. <br> &lt;p&gt;Ovaj tekst je &lt;span style=&quot;color: red;&quot;&gt;crvene boje&lt;/span&gt;
+                unutar paragrafa.&lt;/p&gt;
+            </div>
+        </div>
+
+        <p id="heading1">Šta je to HTML5?</p>
+        <p style="font-size: 15pt;">
+            <b>HTML5</b> je jezik za označavanje koji se koristi za strukturiranje i prikazivanje hipertekstualnih
+            dokumenata
+            na internetu. Predstavlja petu i poslednju glavnu verziju HTML-a, koja je povučena kao zvanična preporuka
+            Svetske organizacije za standarde (W3C). Trenutna verzija HTML-a je poznata kao HTML Living Standard. <br>
+            <b>Novine kod HTML5</b> - Novi semantički elementi i atributi. Ugrađeni API koji pomažu u izgradnji web
+            aplikacija. Pridodata podrška za rad sa audio i video
+            datotekama. HTML5 će smanjiti potrebu za dodacima (plug-ins)
+            web pretraživača.
+        </p>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/HTML5_kod.png" alt="Primer koda u HTML5">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 2: Primer koda u HTML5
+            </figcaption>
+        </figure>
+        <p style="font-size: 15pt;">
+            <b>Novi elementi</b> u HTML5: &lt;article&gt;,
+            &lt;aside&gt;,
+            &lt;audio&gt;,
+            &lt;canvas&gt;,
+            &lt;command&gt;,
+            &lt;datalist&gt;,
+            &lt;details&gt;,
+            &lt;embed&gt;,
+            &lt;figcaption&gt;,
+            &lt;figure&gt;,
+            &lt;footer&gt;,
+            &lt;header&gt;,
+            &lt;hgroup&gt;,
+            &lt;keygen&gt;,
+            &lt;mark&gt;,
+            &lt;meter&gt;,
+            &lt;nav&gt;,
+            &lt;output&gt;,
+            &lt;progress&gt;,
+            &lt;rp&gt;,
+            &lt;rt&gt;,
+            &lt;ruby&gt;,
+            &lt;section&gt;,
+            &lt;source&gt;,
+            &lt;summary&gt;,
+            &lt;time&gt;,
+            &lt;video&gt;. <br>
+            Elementi koji su <b>izbačeni</b> iz HTML5: &lt;acronym&gt;,
+            &lt;applet&gt;,
+            &lt;basefont&gt;,
+            &lt;big&gt;,
+            &lt;center&gt;,
+            &lt;dir&gt;,
+            &lt;font&gt;,
+            &lt;frame&gt;,
+            &lt;frameset&gt;,
+            &lt;isindex&gt;,
+            &lt;noframes&gt;,
+            &lt;s&gt;,
+            &lt;strike&gt;,
+            &lt;tt&gt;,
+            &lt;u&gt;.
+            <br>
+            <b>Header elemenat</b> može da se koristi da obuhvati uvodni
+            sadržaj ili navigaciona pomagala koja su specifična za bilo
+            koji pojedinačni deo stranice, ili koja se odnose na celu
+            stranicu ili oboje. Iako se header elemenat najčešće postavljna na vrh
+            stranice ili sekcije, njegova definicija je nezavisna od
+            njegove pozicije. Nema ograničenja za njegovo korišćenje samo jednom
+            po stranici. <br>
+            <b>Section elemenat</b> predstavlja generičku sekciju dokumenta ili
+            aplikacije. Sekcija, u ovom kontekstu, je tematski grupisan sadržaj,
+            obično uz naslov. Neki primeri prihvatljivog korišćenja za elemenat section
+            uključuju:
+        </p>
+        <ul style="font-size: 15pt;">
+            <li>
+                pojedinačne sekcije i tab-ove.
+            </li>
+            <li>
+                segmente strane "O nama” - na primer, stranica "O nama" za
+                kompanije može da sadrži delove o istoriji kompanije, misiju, kao i
+                njen tim.
+            </li>
+            <li>
+                različite delove stranice dužih “Pravila upotrebe“ (terms of
+                servisis, na primer copyright itd.).
+            </li>
+            <li>
+                različite sekcije sajta za online vesti; na primer, članci mogu biti
+                grupisani u sekcije koje pokrivaju sport, zabavu, ekonomske vesti,
+                itd.
+            </li>
+        </ul>
+        <p style="font-size: 15pt;">
+            <b>Article elemenat</b> predstavlja samostalnu kompoziciju u
+            dokumentu, stranicu, aplikaciju ili sajt i koja se, u principu,
+            može nezavisno distribuirati ili upotrebiti - npr. kod syndication
+            tehnologija (RSS ili ATOM). Upotreba: poruke na forumu, časopisi i novinski članci, tekstovi u blogu,
+            komentari korisnika. <br>
+            <b>Nav elemenat</b> predstavlja linkove za navigaciju. Takođe možete postaviti nav elemenat oko pasusa
+            teksta koji sadrži navigacione veze za stranicu ili sekciju stranice. Neki programeri veruju da je ovaj
+            element pogodan za
+            paginacije ili dubinske veze (breadcrumbs), ili kod formi za
+            pretragu koje predstavljaju osnovno sredstvo za navigaciju
+            sajta (kao što je slučaj na Google-u).
+            <br><b>Aside elemenat</b> Ovaj elemenat predstavlja deo stranice koji je
+            "tangencijalno" u vezi sa sadržajem oko aside
+            elementa, a koji bi se moglo smatrati da je odvojen
+            od sadržaja. Neke od mogućih upotrebe aside elementa
+            obuhvataju sidebar, sekundarne liste veza, ili blok
+            reklama. <br>
+            <b>Footer elemenat</b> u skladu sa specifikacijom,
+            predstavlja podnožje sekcije sadržaja koji je u
+            najbližoj vezi. “Sekcija" sadržaja može da bude ceo
+            dokument, ili može da bude sekcija, članak, ili aside
+            elemenat. Često footer ćе sadržati informacije o autorskim
+            pravima, lista srodnih veza, informacije o autorima i
+            slični sadržaj koji obično smatramo da dolazi na kraju
+            bloka sadržaja. <br>
+            <b>Figure i figcaption elementi</b> - Ovi elementi mogu da se koriste za obeležavanje ilustracija,
+            dijagrama, fotografija, lista koda itd, koji referenciraju iz
+            glavnog sadržaja dokumenta, ali koji mogu da se premeste iz
+            primarnog sadržaja na neku drugu lokaciju na stranici, na
+            posebnu stranicu ili kao dodatak (appendix), a sve bez uticaja
+            na sam tok dokumenta.
+        </p>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/figure_el.png" alt="Primer koda figure i figcaption elemenata">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 3: Primer koda &lt;figure&gt; i &lt;figcaption&gt; elemenata
+            </figcaption>
+        </figure>
+        <p style="font-size: 15pt;">
+            <b>Progress i meter elementi</b>
+            <br>Progress element se koristi da opiše trenutni status promena
+            procesa koji idu ka završetku, bez obzira da li je stanje
+            završetka definisano. <br>
+            Meter elemenat, međutim, predstavlja elemenat čiji opseg se
+            zna, što znači da ima definisanu minimalnu i maksimalnu
+            vrednost. Meter elemenat ima šest povezanih atributa. Pored
+            maksimalne (max) vrednosti, takođe omogućava korišćenje
+            minimalne (min), visoke (high), niske (low), i optimalne
+            (optimum). <br>
+            <b>Time</b> elemenat je specijalno kreiran da se nosi sa problemom
+            da ljudi čitaju datume i vreme različito od mašina. <br>
+            <b>Pattern atribut</b> omogućava da se obezbedi regularni izraz s
+            kojim mora da se upari korisnikov ulaz da bi se smatrao
+            validnim. Za bilo koji ulaz, gde korisnik može da unese tekst u
+            slobodnoj formi, može da se ograniči koja sintaksa je
+            prihvatljiva pomoću pattern atributa.
+            <br><b>HTML5 Form atributi</b> Disabled, Readonly, Multiple, Form, Autocomplete, Datalist, Autofocus. <br>
+            <b>HTML5 Audio i video</b> - Uz HTML5, nema potrebe da korisnik preuzima dodatne
+            programe (plug-ins ili plejeri) da bi video sadržaj, a video ili audio
+            plejer je lako dostupan preko skriptovanja. Video na web-u se zasniva na formatima kontejnera i kodecima.
+            Kontejner je omotač (wrapper) koji čuva sve potrebne podatke
+            koji obuhvataju video datoteku kojoj se pristupa, slično kao što
+            ZIP datoteka obavija ili sadrži fajlove. Video kontejner formati
+            koje su relevantni za HTML5 su MPEG-4, Ogg i WebM. Video kodek definiše algoritam za kodiranje i dekodiranje
+            video
+            sadržaja. Kodek može da kodira tok podataka za prenos, čuvanje,
+            ili enkripciju, ili može da ga dekodira za reprodukciju ili
+            uređivanje. Video kodeci koji se najviše odnose na HTML5 video
+            su H.264, Theora i VP8.
+        </p>
+        <p id="heading1">Šta je to CSS?</p>
+        <p style="font-size: 15pt;">
+            <b>CSS</b> (Cascading Style Sheets) je jezik za stilizovanje koji se koristi za definisanje izgleda i
+            formatiranja
+            web stranica napisanim u HTML-u, XML-u ili drugim jezicima za označavanje. CSS je ključna tehnologija na
+            internetu, zajedno sa HTML-om i JavaScript-om.
+            CSS Level 3 (CSS3) koristi za
+            određivanje vizuelnog izgleda web stranica za razliku od
+            HTML-a (HyperText Markup Language), koji je jezik za
+            označavanje koji definiše strukturu dokumenta za distribuciju
+            na webu. Za razliku od CSS1 i 2, jedinstvena i sveobuhvatna CSS3
+            specifikacija ne postoji. Umesto toga, umesto da nastoji da
+            kreira i objavi celu specifikaciju odjednom, CSS Working Group
+            je podelila specifikaciju u niz modula.
+        </p>
+        <figure style="text-align: center;">
+            <img id="img1" src="style/img/CSS_pravila.png" alt="Delovi CSS pravila">
+            <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                Slika 4: Delovi CSS pravila
+            </figcaption>
+        </figure>
+        <p style="font-size: 15pt;">
+            <b>CSS3 boje</b> - CSS3 takođe pruža i
+            brojne druge opcije: HSL, HSLA i RGBA. Najznačajnija promena
+            sa ovim novim tipovima boja je sposobnost definisanja
+            poluprovidnih boja. <b>Gradijenti</b> su postepeni prelazi između dve ili više navedenih
+            boja. U stvaranju gradijenta, možete odrediti više vrednosti
+            boja između, koje se zovu color stops. Svaki color stop je
+            sačinjen od boja i položaja; web pretraživač bledi boju od
+            svake color stop tačke do sledeće i time stvarajući gladak
+            (kontinuirani) gradijent-prelaz. <br>
+            Primer koda Linearnog gradienta: &lt;background-image: -moz-linear-gradient(30deg, #000, #FFF 75%,
+            #000)&gt;<br>
+            Primer koda Radialnog gradienta: &lt;background-image: -moz-radial-gradient(#FFF, #000)&gt; <br>
+            Za uključivanje fontova korišćenjem <b>@font-face</b> morate da:
+        </p>
+        <ol style="font-size: 15pt;">
+            <li>
+                Postavite font datoteku na server u različitim
+                formatima radi podrške različitih pretraživača.
+            </li>
+            <li>
+                Imenovati , opisati i povezati se na taj font u
+                @font-face pravilu.
+            </li>
+            <li>
+                Uključiti naziv fonta u vrednost svojstva font-family,
+                baš kao što biste uradili za sistemske fontove.
+            </li>
+        </ol>
+        <p id="heading1">HTML5 API</p>
+        <p style="font-size: 15pt;">
+            <b>Canvas</b> - HTML5 canvas element pruža virtuelno platno za
+            kreiranje bitmap slika. Canvas API omogućava
+            interakciju sa canvas elementom korišćenjem
+            JavaSript-a. Canvas je moguće koristiti za jednostavne crteže
+            puput geometrijskih oblika, ali i naprednijih stvari
+            poput animacija. <br>
+            <b>Geolocation</b> omogućava svojim posetiocima
+            da dele svoje trenutne lokacije. U zavisnosti od toga kako oni posećuju vaš
+            sajt, njihova lokacija može se odrediti na bilo
+            koji od sledećih načina: IP adresa, bežična mrežna konekcija, Toranj mobilnog operatera, GPS hardver na
+            uređaju. <br>
+            Offline Web aplikacije rade tako što koriste tehnologiju
+            keširanja (application cache). Keš aplikacije mogu da
+            uskladište ceo sadržaj sajta: sve JavaScript-ove, HTML i
+            CSS, kao i sve vaše slike i resurse.
+        </p>
+        <ul style="font-size: 15pt;"> Postoje tri koraka za pravljenje Offline Web aplikacija:
+            <li>
+                Kreirati cache.manifest fajl.
+            </li>
+            <li>
+                Obezbediti da se manifest file servisira sa ispravnim tipom
+                sadržaja.
+            </li>
+            <li>
+                Usmeriti sve HTML datoteke u keš manifest.
+            </li>
+        </ul>
+        <p style="font-size: 15pt;">
+            Web Storage API definiše standard za način kako mogu da se
+            podaci snime lokalno na računaru ili uređaju korisnika. Pomoću Web Storage, sada imamo standardizovanu
+            definiciju
+            o tome kako da se uskladišti do 5MB podataka kreiranih od
+            strane sajtova ili web aplikacija.
+            Postoje dve vrste HTML5 Web Storage: skladištenje sesije i
+            lokalno skladište. <br>
+            Novi Web Workers API omogućava da se pokrenu veliki
+            skriptovi u pozadini bez prekida funkcionisanja web stranice ili
+            web aplikacije. Web Socket definiše "protokol za dvosmernu komunikaciju sa
+            udaljenim host-om.“ <br>
+            Drag and Drop API omogućava da se određeni elementi
+            specificiraju kao draggable (mogu da se pomeraju), a
+            zatim odredi šta treba da se desi kada se ti draggable
+            elementi premeštaju na druge elemente na stranici.
+        </p>
+
+        <h1 style="text-align: center;">Proveri svoje znanje - Reši kviz</h1>
+
+        <div style="text-align: center;">
+            <button id="open-quiz" type="button" class="btn btn-primary">ZAPOČNI KVIZ</button>
+        </div>
+
+        <div id="quizModal" class="modal">
+            <div class="modal-content">
+                <span id="closeQuiz" class="close">&times;</span>
+                <div class="app">
+                    <h1>HTML5 i CSS3 Quiz</h1>
+                    <div class="quiz">
+                        <h2 id="question">Question goes here</h2>
+                        <div id="answer-buttons">
+                            <button class="btn">Answer 1</button>
+                            <button class="btn">Answer 2</button>
+                            <button class="btn">Answer 3</button>
+                            <button class="btn">Answer 4</button>
+                        </div>
+                        <button id="next-btn">Sledeće</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about" style="text-align: center;">
+                    <h3>Diplomski radio:</h3>
+                    <ul>
+                        <li>Željko Žarković 55/2021</li>
+                    </ul>
+
+                </div>
+                <div class="footer-section contact" style="text-align: center;">
+                    <h3>Kontakt:</h3>
+                    <span><i class="fas fa-envelope"></i> 55-2021@ftn.edu.rs</span><br>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 WEB TEHNOLOGIJE
+        </div>
+    </footer>
+
+    <script src="htmlcssQuizScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
