@@ -17,7 +17,7 @@ const stars = document.querySelectorAll(".star");
       const indeks = document.getElementById("brojIndeksa").value.trim();
       const komentar = document.getElementById("komentar").value.trim();
 
-      if (!ime || !smer || !indeks || selectedRating === 0) {
+      if (!ime || selectedRating === 0) {
         alert("Molimo popunite sva polja i izaberite ocenu.");
         return;
       }

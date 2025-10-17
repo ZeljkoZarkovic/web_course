@@ -51,7 +51,7 @@ document.getElementById("guideNext").addEventListener("click", () => {
 document.getElementById("userNext").addEventListener("click", () => {
     const imePrezime = document.getElementById("imePrezime").value.trim();
     const indeks = document.getElementById("indeksBroj").value.trim();
-    if (!imePrezime || !indeks) {
+    if (!imePrezime) {
         alert("Popunite sva polja.");
         return;
     }
